@@ -1,42 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="project3.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet" type="text/css">
-</head>
+    <link href="project3.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Inter"rel="stylesheet"type="text/css"/>
+  </head>
 
-<body>
-    <script src="project3.js"></script>
+  <body>
     <div class="main">
-        <div class="title">
-            <h2>calc</h2>
-        </div>
-        <input class="output" id="output" placeholder="0" disabled />
-        <div class="container">
-            <button class="btn">7</button>
-            <button class="btn">8</button>
-            <button class="btn">9</button>
-            <button class="btn" id="del">DEL</button>
-            <button class="btn">4</button>
-            <button class="btn">5</button>
-            <button class="btn">6</button>
-            <button class="btn">+</button>
-            <button class="btn">1</button>
-            <button class="btn">2</button>
-            <button class="btn">3</button>
-            <button class="btn">-</button>
-            <button class="btn">.</button>
-            <button class="btn">0</button>
-            <button class="btn">/</button>
-            <button class="btn">*</button>
-            <button class="btnreset" id="reset">RESET</button>
-            <button class="btnequals" id="equals">=</button>
-        </div>
+      <div class="title">
+        <h2>calc</h2>
+      </div>
+      <input class="output" id="output" placeholder="0" disabled />
+      <span id="error" class="error">Invalid Input</span>
+      <div class="container">
+        <button class="btn" onclick="onButtonClick(event)">7</button>
+        <button class="btn" onclick="onButtonClick(event)">8</button>
+        <button class="btn" onclick="onButtonClick(event)">9</button>
+        <button class="btn" onclick="onDelete()" id="del">DEL</button>
+        <button class="btn" onclick="onButtonClick(event)">4</button>
+        <button class="btn" onclick="onButtonClick(event)">5</button>
+        <button class="btn" onclick="onButtonClick(event)">6</button>
+        <button class="btn" onclick="onButtonClick(event)">+</button>
+        <button class="btn" onclick="onButtonClick(event)">1</button>
+        <button class="btn" onclick="onButtonClick(event)">2</button>
+        <button class="btn" onclick="onButtonClick(event)">3</button>
+        <button class="btn" onclick="onButtonClick(event)">-</button>
+        <button class="btn" onclick="onButtonClick(event)">.</button>
+        <button class="btn" onclick="onButtonClick(event)">0</button>
+        <button class="btn" onclick="onButtonClick(event)">/</button>
+        <button class="btn" onclick="onButtonClick(event)">X</button>
+        <button class="btnreset" id="reset" onclick="onReset()">RESET</button>
+        <button class="btnequals" id="equals" onclick="onEqual()">=</button>
+      </div>
     </div>
-</body>
-
+    <script src="project3.js"></script>
+  </body>
 </html>
