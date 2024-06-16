@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for = "name">Enter Your Firstname:</label>
+        <input type = "text" max="255" required id="name" name = "fname"><br><br>
+        <label for = "pw">Enter Your password:</label>
+        <input type = "password" min="7" max="10" required id = "pw" name="password"><br><br>
+        <label for = "email">Enter Your Email:</label>
+        <input type ="email" required id="email" name="email"><br><br>
+        <label for = "phno">Enter your phone number:</label>
+        <input type = "number" minlength="1" maxlength="10" id = "phno" name = "phonenumber"><br><br>
+        <p>Fluent in which language?</p>
+        <input type = "radio" id="languages" name = "languages" value = "Telugu">
+        <label for = "languages">Telugu</label><br>
+        <input type = "radio" id="languages" name = "languages" value = "Hindi">
+        <label for = "languages">Hindi</label><br>
+        <input type = "radio" id="languages" name = "languages" value = "Tamil">
+        <label for = "languages">Tamil</label><br><br>
+        <label for = "skills">Choose your comfortable programming languages:</label>
+        <select id = "skills" name="skills">
+        <option value="HTML">HTML</option>
+        <option value ="Javascript">JS</option>
+        <option value="Golang">Go</option>
+        </select><br>
+        <p>Choose Your Interests</p>
+        <label for = "Interests">cooking</label>
+        <input type="checkbox" id="Interests" name ="Interests" value="cooking">
+        <label for = "Interests">Dancing</label>
+        <input type="checkbox" id="Interests" name ="Interests" value="Dancing">
+        <label for = "Interests">Travelling</label>
+        <input type="checkbox" id="Interests" name ="Interest" value="Travelling"><br><br>
+        <fieldset>
+            <legend>Educational Details</legend>
+            <label for = "Degree">Enter your Degree university:</label>
+            <input type="text" id = "Degree" name ="university"><br><br>
+            <label for ="Inter">Enter Your HSE:</label>
+            <input type="text" id="Inter" name = "HSE">
+        </fieldset><br><br>
+        <input type = "submit" id = "button" value="Send">
+    </form>
+</body>
+</html>

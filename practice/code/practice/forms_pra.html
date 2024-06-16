@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1{
+        text-align: center;
+    }
+</style>
+<body>
+    <h1>Novell Services Login</h1>
+    <div>
+    <form>
+        <label for = "Uname">Username</label>
+        <input type = "text" id = "Uname" name = "Username"><br><br>
+        <label for = "pw">Password</label>
+        <input type = "password" id = "pw" name = "Password"><br><br>
+        <label for = "city">City Of Employment</label>
+        <input type="text" id = "city" name = "COE"><br><br>
+        <label for = "Server">Webserver:</label>
+        <select id="Server" name="Webserver">
+        <option value="">Choose a Webserver</option>
+        </select>
+        <p>Please Specify Your Role:</p>
+        <input type="radio" id="role" name="role" value="admin">
+        <label for = "role">Admin</label><br>
+        <input type="radio" id="role" name="role" value="Engineer">
+        <label for = "role">Engineer</label><br>
+        <input type="radio" id="role" name="role" value="Manager">
+        <label for = "role">Manager</label><br>
+        <input type="radio" id="role" name="role" value="Guest">
+        <label for = "role">Guest</label><br>
+        <p>Single Sign-on to the following:</p>
+        <input type = "checkbox" id="Sign-on" name = "Signon" value="Mail">
+        <label for = "Sign-on">Mail</label><br>
+        <input type = "checkbox" id="Sign-on" name = "Signon" value="PayRoll">
+        <label for = "Sign-on">Pay-roll</label><br>
+        <input type = "checkbox" id="Sign-on" name = "Signon" value="SelfService">
+        <label for = "Sign-on">Self-Service</label><br><br>
+        <input type= "submit"  value="Login">
+        <input type= "reset"  value="Reset">
+    </form>
+    </div>
+</body>
+</html>

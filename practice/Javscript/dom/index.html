@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class = "dummy">Nikhitha</h1>
+    <h1 class = "dummy">Hello</h1>
+    <h1 class = "dummy">qwertyiio</h1>
+    <h1 class = "dummy">asdfghj</h1>
+    <h1 class = "dummy">zxcvb</h1>
+    <!-- <button onclick="myfunction()">click</button> -->
+    <button onclick = "alert('you visited')">click</button>
+    <!-- <button onclick="myfun()">change colour</button> -->
+    <!-- <h1 class="dummy">Beeraka</h1> -->
+    <script>
+        // var element = document.getElementById("heading");
+        var ele = document.getElementsByClassName("dummy");
+        console.log(ele);  
+        for (var i = 0; i < ele.length; i++){
+            ele[i].style.color = "green";    
+        }
+        var ele = document.getElementsByTagName("div");
+        // function myfunction(params) {
+        //     alert('event is triggered');
+        //     element.innerText = "Nikki";
+        //     element.style.backgroundColor = "blue";
+        //     element.innerHTML = "<i>Nikki</i>"
+        // } 
+    </script>
+</body>
+</html>
