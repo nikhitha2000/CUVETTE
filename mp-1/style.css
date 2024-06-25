@@ -101,3 +101,51 @@ body {
   width: 100px;
   height: 100px;
 }
+.rules {
+    position: absolute;
+    top: 200px;
+    right: 50px;
+    background-color:#004429;
+    color: #FFFFFF;
+    border-radius: 10px;
+    border: 7px solid #FFFFFF;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    text-align: left;
+}
+.rules h2{
+    margin: 0;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 15px;
+}
+li{
+    color:#FFD600;
+    text-align: left;
+    margin-bottom: 10px;
+    font-family: 'Roboto';
+}
+.gamerules{
+    color: #FFFFFF;
+    text-align: left;
+}
+.redcircle{
+        position: absolute; 
+        top: -30px;  
+        right: -20px; 
+}
+ul{
+    padding: 20px;
+}
+.circle-text {
+    position: absolute;
+    top: 0px;
+    left :290px;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+  }
