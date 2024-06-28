@@ -15,28 +15,35 @@
                 <div class="scoreboard">
                     <div class="score">
                         <h2>COMPUTER SCORE</h2>
-                        <div class="score-value">0</div>
+                        <div class="score-value" id="computer-score">0</div>
                     </div>
                     <div class="score">
                         <h2>YOUR SCORE</h2>
-                        <div class="score-value">0</div>
+                        <div class="score-value" id="user-score">0</div>
                     </div>
                 </div>
             </div>
             <div class="body">
                 <div class = "game-elements">
                     <div class="circle" id="rock">
-                        <img src="./icons8-fist-67 1.png" alt="Rock image" class="rockimage"onclick= "itemclick()">
+                        <img src="./icons8-fist-67 1.png" alt="Rock image" class="choicesimage"onclick= "itemclick(event)">
                     </div>
                     <img src = "Line 1.png" alt="Line 1" class="Lineimage">
-                    <div class="circle" id="paper">
-                        <img src = "./17911 1.png" alt = "Scissors image" class="scissors"onclick= "itemclick()">   
+                    <div class="circle" id="scissors">
+                        <img src = "./17911 1.png" alt = "Scissors image" class="choicesimage"onclick= "itemclick(event)">   
                     </div>
                     <img src = "Line 2.png" alt="Line 2" class="line2">
-                    <div class="circle" id="scissors">
-                        <img src="./icons8-hand-64 1.png" alt="paper image" class="paper"onclick= "itemclick()">
+                    <div class="circle paper-position" id="paper">
+                        <img src="./icons8-hand-64 1.png" alt="paper image" class="choicesimage"onclick= "itemclick(event)">
                     </div>
                     <img src="./Line 3.png" alt="Line 3" class="line3">
+                </div>
+                <div class="selected-game-wrapper">
+                </div>
+                <div class="winning-page">
+                    <h1>HURRAY!!</h1>
+                    <h2>YOU WON THE GAME</h2>
+                    <button class="play-again" onClick="restartGame()">PLAY AGAIN</button>
                 </div>
                 <div class="rules-wrapper">
                 <div class="rules">
@@ -51,6 +58,7 @@
                 </div>
                 <div class="button-container">
                     <button class="rules-button" onclick="showRules()">RULES</button>
+                    <button class="rules-button" id="next-btn" onclick="onNext()">NEXT</button>
                 </div>
                 </div>
             </div>
