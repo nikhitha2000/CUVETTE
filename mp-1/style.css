@@ -68,6 +68,9 @@ body {
     color: #FFFFFF;
     text-align: center;
 }
+.winning-image {
+background-image: url('/mp-1/stars.png');
+}
 
 .hide {
     display: none;
