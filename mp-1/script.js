@@ -98,7 +98,6 @@ function restartGame() {
     updateSelectedGameWrapper();
     hideNextBtn();
     showHeader();
-
 }
 
 function onNext() {
