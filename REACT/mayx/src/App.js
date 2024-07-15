@@ -1,13 +1,16 @@
 import React from 'react'
-import About from './components/About'
-var fName = "Nikhitha";
-var Phone =1234567890;
+import Counter from './components/Counter'
+import Theme from './components/Theme'
+import Forms from './components/Forms'
+import Form from './components/Form'
 
 function App() {
   return (
     <div>
-      <About firstName = {fName} phone = {Phone}/>
-      <About firstName = {fName} phone = {Phone}/>
+      {/* <Counter/> */}
+      {/* <Theme/> */}
+      {/* <Forms/> */}
+      <Form/>
       </div>
   )
 }
