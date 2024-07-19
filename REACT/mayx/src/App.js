@@ -3,15 +3,21 @@ import Counter from './components/Counter'
 import Theme from './components/Theme'
 import Forms from './components/Forms'
 import Form from './components/Form'
+import Effect from './components/Effect'
+import Router from './components/Router'
+import Navbar from './components/Navbar'
 
 function App() {
   return (
-    <div>
-      {/* <Counter/> */}
+    <>
+    {/* <Counter/> */}
       {/* <Theme/> */}
       {/* <Forms/> */}
-      <Form/>
-      </div>
+      {/* <Form/> */}
+      {/* <Effect/> */}
+      <Router/>
+      {/* <Navbar/> */}
+    </>
   )
 }
 
