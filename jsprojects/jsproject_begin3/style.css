@@ -1,0 +1,57 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: white;
+}
+
+.container{
+    height: 100vh;
+    width:100vw;
+    background-color: rgb(23,23,23);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.threedots{
+font-size: 40px;
+position: absolute;
+top:3%;
+left: 45%;
+cursor: pointer;
+}
+
+.document{
+    height: 100vh;
+    position: fixed;
+    width: 0;
+    top:0;
+    left: 0;
+    overflow-x: hidden;
+    z-index: 1;
+    background-color: orange;
+}
+.cut{
+    position: absolute;
+    top:20px;
+    right: 20px;
+    font-size: 40px;
+    cursor: pointer;
+}
+.nav ul li a{
+   text-decoration: none;
+   font-size: 40px;
+   color: white;
+
+}
+.nav ul{
+    text-align: center;
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:20px;
+    list-style-type: none;
+}
