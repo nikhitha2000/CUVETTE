@@ -11,6 +11,10 @@ import Lists from './components/W3/Lists'
 import Props from './components/W3/Props'
 import State from './components/W3/State'
 import Yt from './components/W3/Yt'
+import Themme from './components/W3/Themme'
+import ContextProvider from './components/W3/ContextProvider'
+import HigherOrderComponent from './components/W3/HigherOrderComponent'
+import Useform from './components/W3/Useform'
 function App() {
   return (
     <>
@@ -37,9 +41,13 @@ function App() {
       price = "500"
       /> */}
       {/* <State/> */}
-      <Yt/>
+      {/* <Yt/> */}
       {/* <Router/> */}
       {/* <Navbar/> */}
+      {/* <Themme/> */}
+      {/* <HigherOrderComponent/> */}
+      <Useform/>
+      {/* <ContextProvider/> */}
     </>
   )
 }
