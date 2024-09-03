@@ -1,0 +1,16 @@
+var file = path.join(__dirname, "public");
+app.use(express.static(file));
+console.log(file);
+
+app.get("/", (req, res) => {
+    res.sendFile(path.join(__dirname, "public", "index.html"));
+})
+
+app.listen(port,(err)=>{
+    if (err) {
+        console.error("Error listening:", err); // Print error details if any
+    } else {
+        console.log(`Server is listening on port ${port}`);
+    }
+})
+    
