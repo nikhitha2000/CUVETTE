@@ -4,6 +4,7 @@ const app = express();
 const path = require('path');
 const port = 2000;
 
+const phone = require('./tut2.js');
 
 app.get('/', (req, res) => {
    res.send("Welcome to the tutorials of ExpressJs");
@@ -20,6 +21,9 @@ app.get('/', (req, res) => {
             Name:"Praneeth",
             lastname:"Beeraka"
         }])
+        })
+        app.get('/phone',(req,res) => {
+            res.json(phone)
         })
         app.all('*',(req,res) => {
             res.send("not found");
