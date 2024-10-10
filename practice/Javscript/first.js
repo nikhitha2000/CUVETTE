@@ -30,3 +30,14 @@ var arr4 = arr2.splice(2,1)
 console.log(arr2)
 var arr5 = arr2.splice(2,0,"Nikhitha")
 console.log(arr2)
+
+
+function add(...rest){
+let sum = rest.reduce((total,item)=>{
+    return total + item
+    
+},0)
+console.log(sum)
+}
+
+add(23,34,5,6,67,89,90)

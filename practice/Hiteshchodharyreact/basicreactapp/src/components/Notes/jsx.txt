@@ -1,0 +1,4 @@
+first JSX element => converts into the React.createElement and then converts into the Js object and then it renders as a HTml element
+
+babel is converting the jSX Element to the Html element
+jsx is HTML like syntax but not HTML
