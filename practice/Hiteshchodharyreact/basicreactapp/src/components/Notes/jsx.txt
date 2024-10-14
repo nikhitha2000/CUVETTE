@@ -2,3 +2,10 @@ first JSX element => converts into the React.createElement and then converts int
 
 babel is converting the jSX Element to the Html element
 jsx is HTML like syntax but not HTML
+
+Functional Component : it's a piece of javascript code which returns the JSX.
+whenever we write something in the {} it takes care of all the data whichis entering and it sanitizes the input andit sends the data and whichis the main step from escaping all the attacks.
+
+Config Driven UI:
+
+UI change in lace to place 
