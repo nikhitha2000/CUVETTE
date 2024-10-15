@@ -9,8 +9,9 @@ function Res(props) {
       <img src={Biryani} alt= "Biryani" width= "100%" height= "45%" />
         <h3>{props.resName}</h3>
         <h4>{props.cuisine}</h4>
-        <h4>4.4 Stars</h4>
-        <h4>38mins </h4>
+        <h4>{props.rating}Stars</h4>
+        <h4>{props.deliveryTime} </h4>
+        <h4>₹{props.price} for Two</h4>
     </div>
   )
 }
