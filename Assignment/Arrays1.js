@@ -163,3 +163,19 @@ function removeDuplicate(arr1){
 }
 
 console.log(removeDuplicate(arr1));
+
+const num = [12,34,545,67,89,90];
+function caluculate(num){
+    const count = num.length;// Total count of numbers
+    const Total = num.reduce((total,item,index)=>{
+        total+=item;
+        return total;
+}, 0);
+const average = count>0?Total/count:0; // Average
+return {
+    count: count,
+    sum:Total,
+    Average:average
+}
+}
+console.log(caluculate(num));
