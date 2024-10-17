@@ -8,4 +8,84 @@ whenever we write something in the {} it takes care of all the data whichis ente
 
 Config Driven UI:
 
-UI change in lace to place 
+UI change in lace to place
+
+
+Virtual Dom: not an actual DOM 
+
+virtual Dom is representation of actual DOM
+Actual DOM consists of all the tags.
+Diff algorithm : finds out the difference between the updated virtual DOM and the original DOM.
+
+In React16 a new algorithm came to find out the difference between the old and the new virtual DOM
+
+why react is fast -> it is doing efficient DOM manipulation
+
+
+When you use useState, you are always given two variables because they serve different but crucial purposes:
+
+The State Variable:
+
+This is the current value of the state. It represents the data that your component will use to display things or make decisions.
+You read this value to know the current state of your component. For example, it could be the current count, the user's input, or whether a checkbox is checked.
+The State Update Function:
+
+This is the function you use to change the state variable. When you want to update the value of the state, you call this function with the new value.
+This function is what tells React, “Hey, something has changed! Please re-render the component with the updated value.”
+Why Do We Need Two Variables?
+Let's break down why both are necessary:
+
+1. The State Variable: To Access the Current Value
+You need the first variable to read or access the current state. This value determines what should be displayed in the UI or how your component behaves. For example, in a counter app:
+
+javascript
+Copy code
+const [count, setCount] = useState(0);
+count holds the current value of the counter (starting from 0). It updates every time the user clicks a button, and React uses this to display the correct number on the screen.
+If you didn't have this variable, you wouldn't know what the current value is and couldn’t display it in your component. So, you need this first variable to know "what's the state right now?"
+
+2. The Update Function: To Change the State
+The second variable is a function that updates the state. You can't just change the first variable directly because React wouldn’t know when to re-render the component. For example:
+
+javascript
+Copy code
+setCount(count + 1);
+This line tells React to update count with a new value (count + 1 in this case).
+When you call this function, React knows that the state has changed, and it automatically re-renders the component with the updated value.
+If you tried to update the first variable (like count = 5;), React wouldn't detect this change, and the UI wouldn’t re-render properly. This is why the second function exists: it lets React manage and track state changes correctly.
+
+Key Reason: React’s Re-rendering System
+React’s reactivity relies on state changes to know when to re-render components. When you call the second variable (the updater function), React knows to re-render the component with the updated state.
+The first variable is for accessing the state (current value), and the second function is for updating that state.
+Example for Better Understanding:
+Let’s take an example where you want to track the number of times a button is clicked:
+
+javascript
+Copy code
+function Counter() {
+  const [count, setCount] = useState(0); // Declare state
+
+  return (
+    <div>
+      <p>You clicked {count} times</p> {/* Display the current value */}
+      <button onClick={() => setCount(count + 1)}>Click me</button> {/* Update the state */}
+    </div>
+  );
+}
+count is the current value of how many times the button is clicked.
+setCount is the function that updates count each time the button is clicked, telling React to re-render the component with the new value.
+What Happens Behind the Scenes?
+Initial Render: React renders the component with count = 0 (the initial value).
+User Clicks the Button: The user clicks the button, and setCount(count + 1) is called.
+State Updates: React sees that the state has changed (count has increased by 1).
+Re-render: React re-renders the component with the updated value (count = 1).
+Without Two Variables:
+If we didn't have two variables, we wouldn't be able to properly update or display the state. For example:
+
+If we didn’t have the state variable (count), we wouldn’t know what the current value is.
+If we didn’t have the updater function (setCount), we couldn’t properly tell React when to update the value and re-render the component.
+In Summary:
+The state variable (e.g., count): This is the current value of your state. It tells you what your app "knows" at any given time (like how many times a button has been clicked).
+The state updater function (e.g., setCount): This is a special function that you use to update the value. Whenever you use this function, React will update the state and re-render the component.
+
+React fiber: Its headline feature is incremental rendering: the ability to split rendering work into chunks and spread it out over multiple frames.
