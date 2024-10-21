@@ -89,3 +89,5 @@ The state variable (e.g., count): This is the current value of your state. It te
 The state updater function (e.g., setCount): This is a special function that you use to update the value. Whenever you use this function, React will update the state and re-render the component.
 
 React fiber: Its headline feature is incremental rendering: the ability to split rendering work into chunks and spread it out over multiple frames.
+
+Whenever state variable gets updates it renders the reconciliation cycle.(re-renders the component)
